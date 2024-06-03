@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="tic.css" />
+</head>
+
+<body>
+    <div class="msgcontainer hide">
+        <p id="msg">Winner</p>
+        <button id="new">NEW GAME</button>
+    </div>
+    <main>
+        <div class="heading">TIC - TAC - TOE</div>
+        <div class="game-container">
+            <div class="player">
+                <img src="img/a1.jpeg" alt="Player 1 Avatar" class="avatar">
+                <p>Player X</p>
+                <p>Turns: <span id="playerX-turns">0</span></p>
+            </div>
+            <div class="container">
+                <div class="game">
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                </div>
+            </div>
+            <div class="player">
+                <img src="img/a2.png" alt="Player 2 Avatar" class="avatar">
+                <p>Player O</p>
+                <p>Turns: <span id="playerO-turns">0</span></p>
+            </div>
+        </div>
+        <button id="reset">RESET GAME</button>
+    </main>
+    <script src="tic.js"></script>
+</body>
+
+</html>

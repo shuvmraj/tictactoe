@@ -1,0 +1,115 @@
+/* app.css */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #54b8ff;
+    color: #333;
+}
+
+
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6ff72;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.heading{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #000000;
+    align-items: center;
+    text-align: center;
+    background-color: #40f34c;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    background-color: #ff3232;
+    border: 1px solid #333;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.box:hover {
+    background-color: #1b06ff;
+}
+
+.hide {
+    display: none;
+}
+
+.msgcontainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.msgcontainer p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #007afc;
+    color: rgb(154, 255, 154);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0062ca;
+}
+button#reset {
+    margin: 20px auto; 
+    display: block; 
+    background-color: #0059b9;
+}
